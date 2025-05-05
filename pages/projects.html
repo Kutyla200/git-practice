@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects | Kutyla Alfredo</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <img src="/assets/potrait.jpg" alt="Profile Photo" class="profile-img">
+        <div class="header-text">
+          <h1 class="name">Kutyla Alfredo</h1>
+          <p class="title">Full Stack Developer</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="projects.html" class="active"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2><i class="fas fa-laptop-code"></i> JavaScript Projects</h2>
+        
+        <article class="project">
+          <h3>Text Changer</h3>
+          <p id="targetText">This is some text that can be changed.</p>
+          <button id="changeTextBtn" class="btn">Change Text</button>
+        </article>
+
+        <article class="project">
+          <h3>Counter App</h3>
+          <p>Counter: <span id="counter">0</span></p>
+          <button id="countBtn" class="btn">Increment</button>
+          <button id="resetBtn" class="btn secondary">Reset</button>
+        </article>
+
+        <article class="project">
+          <h3>Local Storage Demo</h3>
+          <div class="storage-demo">
+            <input type="text" id="storageInput" placeholder="Enter text to store">
+            <button id="saveToStorage" class="btn">Save to Storage</button>
+            <button id="getFromStorage" class="btn secondary">Retrieve</button>
+            <p id="storageDisplay"></p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kutyla-alfredo-1848a426a" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Kutyla200/git-practice" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p>&copy; <span id="current-year"></span> Kutyla Alfredo. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="/scripts/projects.js"></script>
+</body>
+</html>
