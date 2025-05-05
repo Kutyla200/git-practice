@@ -1,9 +1,9 @@
-// Change Text Example
+
 document.getElementById("changeTextBtn").addEventListener("click", function() {
     document.getElementById("targetText").textContent = "Text has been changed!";
   });
 
-  // Contact Form
+
   document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
     const name = document.getElementById("name").value;
@@ -19,14 +19,14 @@ document.getElementById("changeTextBtn").addEventListener("click", function() {
     }
   });
 
-  // Counter App
+
   let count = 0;
   document.getElementById("countBtn").addEventListener("click", function() {
     count++;
     document.getElementById("counter").textContent = count;
   });
 
-  // Local Storage
+  
   document.getElementById("saveNameBtn").addEventListener("click", function() {
     localStorage.setItem("username", "Kutyla");
     const stored = localStorage.getItem("username");
